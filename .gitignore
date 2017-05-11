@@ -1,0 +1,6 @@
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+.project
+/composer.lock
