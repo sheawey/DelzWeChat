@@ -1,0 +1,21 @@
+{
+    "name": "delz/wechat",
+    "description": "微信公众号组件",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "徐威",
+            "email": "sheawey@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Delz\\WeChat\\": "src/Delz/WeChat"
+        }
+    }
+}

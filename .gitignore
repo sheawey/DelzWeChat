@@ -4,3 +4,4 @@ Desktop.ini
 .DS_Store
 .project
 /composer.lock
+/vendor/

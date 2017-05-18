@@ -238,7 +238,7 @@ class Client
         ];
 
         $response = Http::post(self::API_ACCESS_TOKEN, $params);
-        $responseArr = json_decode($response->body, true);
+        $responseArr = json_decode($response->getBody(), true);
 
         if (isset($responseArr['errcode'])) {
             throw new WeChatException($responseArr['errmsg'], $responseArr['errcode']);
@@ -868,7 +868,7 @@ class Client
             }
             return $result;
         } else {
-            return $response->body;
+            return $response->getBody();
         }
     }
 
@@ -950,7 +950,7 @@ class Client
             }
             return $result;
         } else {
-            return $response->body;
+            return $response->getBody();
         }
     }
 
