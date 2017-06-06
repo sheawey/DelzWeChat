@@ -11,7 +11,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.0.0",
+        "delz/common": "dev-master",
+        "delz/cache": "dev-master",
+        "guzzlehttp/guzzle": "~6.2.1"
     },
     "autoload": {
         "psr-4": {
