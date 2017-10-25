@@ -237,7 +237,7 @@ class Client
             'secret' => $this->appSecret
         ];
 
-        $response = Http::post(self::API_ACCESS_TOKEN, $params);
+        $response = Http::get(self::API_ACCESS_TOKEN, ['query' => $params]);
         $responseArr = json_decode($response->getBody(), true);
 
         if (isset($responseArr['errcode'])) {
